@@ -21,7 +21,7 @@ The choices are:
 - [Microsoft OneDrive][8]
 - Any other?
 
-I used to have [Arqbackup][9], but it became unreliable, and I never liked the way it stored the files on AWS. Sadly I have not been able to find a substitute to automate backups to the cloud. So, the questions are: which cloud storage, and what workflow to use?
+I used to have [Arqbackup][9], but it became unreliable, and I never liked the way it stored the files on AWS. Sadly I have not been able to find a substitute to automate backups to the cloud. So, the questions are: which cloud storage, and what work-flow to use?
 
 From the ones listed above, I use Google Drive and iCloud already, but their current use is specific. Google Drive holds my everyday files, while iCloud synchronizes all my bookmarks, iCloud keychain, and iDevices documents and photo streams. iCloud is going to change drastically with the next version of OS X and iOS, but yet, what I am looking for is the storage to keep my automated backups.
 

@@ -1,14 +1,14 @@
 ---
 date: 2013-12-25T14:00:00Z
-title: Movies to watch during Christmas
-url: /2013/12/25/movies-to-watch-during-christmas/
+title: Films to watch during Christmas
+url: /2013/12/25/films-to-watch-during-christmas/
 categories:
 - "personal"
 tags:
-- "movies"
+- "films"
 ---
 
-Christmas is not the same without watching certain movies. The ones that are always a must for me are "[National Lampoon's European Vacation][1]" and "[National Lampoon's Christmas Vacation][2]". As I type this I am getting ready to watch them both. Those are the ones to laugh to tears and have fun. The other favorite one --please don't hate me-- is "[The Sound of Music][3]." There is something about it that just does it for me. 
+Christmas is not the same without watching certain films. The ones that are always a must for me are "[National Lampoon's European Vacation][1]" and "[National Lampoon's Christmas Vacation][2]". As I type this I am getting ready to watch them both. Those are the ones to laugh to tears and have fun. The other favourite one --please don't hate me-- is "[The Sound of Music][3]." There is something about it that just does it for me. 
 
 > "The hills are alive, with the sound of music!"
 
