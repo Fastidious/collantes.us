@@ -1,6 +1,6 @@
 ---
 date: 2015-09-16T14:00:00Z
-title: Secrets of living to be 00 years old
+title: Secrets of living to be 200 years old
 url: /2015/09/16/secrets-of-living-to-200-years-old/
 categories:
 - "life"
