@@ -1,0 +1,15 @@
+{{/* Common elements for the top of the head tag on all pages. */}}
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>{{ .Page.Title }}{{ if ne .IsHome true }} – {{ .Site.Title }}{{ end }}</title>
+<!-- Style sheets -->
+<link rel='stylesheet' href='/css/browser.css'>
+<link rel='stylesheet' href='/css/terminal.css'>
+<link rel='stylesheet' href='/style.css'>
+<link rel='stylesheet' href='/css/all.css'>
+<!-- Custom style sheets injected by posts (if any) -->
+{{ with .Params.css }}<link rel='stylesheet' href='{{ . }} '>{{ end }}
+<!-- RSS feed -->
+<link rel="alternate" type="application/rss+xml" href="/index.xml" />
+<!-- Open graph -->
+{{ template "_internal/opengraph.html" . }}

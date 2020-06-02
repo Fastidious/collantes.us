@@ -1,0 +1,99 @@
+<!-- The platform-specific installation command widget from the Site.js web site.-->
+<p>Copy and paste the following command into <span id='terminal-copy'>your terminal</span>. <strong>Before you pipe any script into your computer, always <span id='view-installation-script-source'>view the source code (<a href="https://source.ind.ie/site.js/site/blob/master/installation-scripts/install">Linux and macOS</a>, <a href="https://source.ind.ie/site.js/site/blob/master/installation-scripts/install.txt">Windows</a>)</span> and make sure you understand what it does.</strong></p>
+
+<section id='install-linux' class='installation-instructions'>
+  <h3>Linux</h3>
+  <div class='code-with-copy-button'>
+    {{ highlight "wget -qO- https://sitejs.org/install | bash" "sh" ""}}
+    <button hidden class='copy-to-clipboard' onclick='copyInstallationInstructionsToClipboardFor("linux")'>Copy</button>
+  </div>
+</section>
+
+<section id='install-mac' class='installation-instructions'>
+  <h3>macOS</h3>
+  <div class='code-with-copy-button'>
+    {{ highlight "curl -s https://sitejs.org/install | bash" "sh" "" }}
+    <button hidden class='copy-to-clipboard' onclick='copyInstallationInstructionsToClipboardFor("mac")'>Copy</button>
+  </div>
+</section>
+
+<section id='install-windows' class='installation-instructions'>
+  <h3>Windows 10</h3>
+  <div class='code-with-copy-button'>
+    {{ highlight "iex(iwr -UseBasicParsing https://sitejs.org/install.txt).Content" "PowerShell" ""}}
+    <button hidden class='copy-to-clipboard' onclick='copyInstallationInstructionsToClipboardFor("windows")'>Copy</button>
+  </div>
+</section>
+
+<p id='links-to-instructions-for-other-platforms' hidden>
+  <strong>Instructions for other platforms:</strong>
+  <span id='link-linux'><a onclick='displayInstallationInstructionsFor("linux")'>Linux</a> | </span>
+  <span id='link-mac'><a onclick='displayInstallationInstructionsFor("mac")'>macOS</a><span id='pipe-before-windows'> | </span></span>
+  <a id='link-windows' onclick='displayInstallationInstructionsFor("windows")'>Windows</a>
+</p>
+
+<!-- Progressively enhance the platform-specific installation command widget. -->
+<script>
+  // Progressively enhance the installation instructions to only show the ones for the
+  // detected platform (with links to the others), if we can detect a supported platform.
+  const userAgent = navigator.userAgent.toLowerCase()
+  let currentPlatform = 'unknown'
+  if (userAgent.includes('linux')) { currentPlatform = 'linux' }
+  if (userAgent.includes('mac os x')) { currentPlatform = 'mac' }
+  if (userAgent.includes('windows')) { currentPlatform = 'windows'}
+
+  displayInstallationInstructionsFor(currentPlatform)
+
+  function displayInstallationInstructionsFor(currentPlatform) {
+    if (currentPlatform !== 'unknown') {
+      // Show the instructions for the detected platform and hide the ones for the other platforms.
+      ['linux', 'mac', 'windows'].forEach(platform => {
+        document.querySelector(`#install-${platform}`).hidden = !(platform === currentPlatform)
+        document.querySelector(`#link-${platform}`).hidden = (platform === currentPlatform)
+      })
+
+      // Cosmetic: don’t show the last separator if there’s no content after it.
+      document.querySelector('#pipe-before-windows').hidden = (currentPlatform === 'windows')
+
+      // Show links to instructions for other platforms.
+      document.querySelector('#links-to-instructions-for-other-platforms').hidden = false
+
+      // Show all the copy to clipboard buttons.
+      document.querySelectorAll('.copy-to-clipboard').forEach(button => button.hidden = false)
+
+      // Rewrite the view installation script section copy to simplify it and link directly
+      // to the relevant script.
+      document.querySelector('#view-installation-script-source').innerHTML = (currentPlatform === 'windows') ? '<a href="https://source.ind.ie/site.js/site/blob/master/installation-scripts/install.txt">view the source code</a>' : '<a href="https://source.ind.ie/site.js/site/blob/master/installation-scripts/install">view the source code</a>'
+
+      // Also rewrite the terminal-related bit of the copy to specify exactly the environment that
+      // we support on Windows 10.
+      document.querySelector('#terminal-copy').innerHTML = (currentPlatform === 'windows') ? 'a PowerShell session running under <a href="https://github.com/Microsoft/Terminal">Windows Terminal</a>' : 'your terminal'
+
+      // Hide/display any Windows-only caveats.
+      document.querySelectorAll('.windows-only').forEach(node => node.hidden = !(currentPlatform === 'windows'))
+    }
+  }
+
+  function copyInstallationInstructionsToClipboardFor(platform) {
+    const installationCommand = document.querySelector(`section#install-${platform} code`)
+
+    // Since the chat apps select the nicknames by default, we need
+    // to clear ranges for the copy button to work.
+    window.getSelection().removeAllRanges()
+
+    const selectedCode = document.createRange()
+    selectedCode.selectNode(installationCommand)
+    window.getSelection().addRange(selectedCode)
+
+    try {
+      const success = document.execCommand('copy')
+      if (!success) console.log('Failed to copy installation command.')
+    } catch(error) {
+      console.log('Copy command threw an error', error)
+    }
+
+    // Remove the selections - NOTE: Should use
+    // removeRange(range) when it is supported
+    window.getSelection().removeRange(selectedCode)
+  }
+</script>

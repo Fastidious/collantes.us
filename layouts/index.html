@@ -1,0 +1,40 @@
+{{/* Used to render the list of posts on the index page. */}}
+<!doctype html>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+    <link rel='stylesheet' href='/index.css'>
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    {{ .Content }}
+
+    <!-- Group by year. -->
+    {{ range .Site.RegularPages.GroupByDate "2006" }}
+    <h2>{{ .Key }}</h2>
+
+      <!-- Group by month. -->
+      {{ range .Pages.GroupByDate "January" }}
+      <h3>{{ .Key }}</h3>
+
+        <!-- Orders content according to the "date" field in front matter. -->
+        {{ range .Pages.GroupByDate "02" }}
+        <h4 class='postdate date'>{{ .Key }}</h4>
+        <ul> 
+          {{ range $index, $post := .Pages }}
+            <li>
+              <time datetime="{{ $post.Date.Format "2006-01-02T15:04:05Z0700" }}">
+                <span class='postdate day item-{{ $index }}'>{{ $post.Date.Format "Mon" }}</span>
+              </time>
+              <span class='postdate'>{{ $post.Date.Format "15:04" }}</span>
+              <a id='{{ $post.Date.Format "20060102T150405Z0700" }}' class='posttitle' href="{{ .RelPermalink }}">{{ $post.Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ partial "footer.html" . }}
+  </body>
+</html>
