@@ -8,6 +8,4 @@ videos:
   - 
 tags:
   - 
-draft: true
 ---
-
