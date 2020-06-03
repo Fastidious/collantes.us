@@ -1,6 +1,6 @@
 ---
 date: 2013-12-23T14:00:00Z
-title: A Christmas Tree Small Story
+title: A Christmas tree small story
 url: /2013/12/23/a-christmas-tree-small-story/
 categories:
 - "personal"
