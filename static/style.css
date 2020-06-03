@@ -358,7 +358,7 @@ ol, ul {
 }
 
 li::marker {
-  color: darkgray;
+  color: #00bfff;
 }
 
 .posttitle {
