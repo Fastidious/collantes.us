@@ -342,7 +342,14 @@ a {
 
 header > a {
   border: none;
+  text-decoration: none;
 }
+
+header > h1 > a {
+  border: none;
+  text-decoration: none;
+}
+
 
 /* Lists */
 
@@ -690,8 +697,8 @@ a.anchor {
 
 .prompt {
     display: inline-block;
-    width: 10px;
-    height: 13px;
+    width: 20px;
+    height: 30px;
     background: #00bfff;
     margin-left: 5px;
     border-radius: 1px;
