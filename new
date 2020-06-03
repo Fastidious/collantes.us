@@ -1,9 +1,0 @@
-#!/bin/bash
-YEAR_FOR_POST=`date +"%Y-%m-%d"`
-if [ -z "$1" ]; then
-echo "You must enter name of post, in new-post-format."
-echo "For example: new another-post-again"
-else
-hugo new content/$YEAR_FOR_POST-$1.md
-open -a typora content/$YEAR_FOR_POST-$1.md
-fi
