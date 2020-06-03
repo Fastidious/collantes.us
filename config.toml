@@ -11,7 +11,7 @@ disableKinds = ['taxonomyTerm', 'section']
 [params]
   # Open Graph details for embedding.
   description = "David Collantes' personal website, and blog."
-  images = ["/resources/opengraph_card.jpg"]
+  images = ["/resources/opengraph_card.png"]
   title = "David Collantes"
   interim = "david#"
 
