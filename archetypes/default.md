@@ -1,6 +1,6 @@
 ---
 title: "{{ (replace (slicestr .TranslationBaseName 11) "-" " ") | title }}"
-date: "{{ .Date }}"
+date: {{ .Date }}
 description:
 images:
   -
