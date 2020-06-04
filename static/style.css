@@ -288,7 +288,7 @@ figure > video { margin-bottom: 1rem; }
 /* Block quotes */
 
 blockquote {
-  margin-left: -1.3rem;
+  margin-left: 0rem;
   border-left: 0.3rem solid slategray;
   padding-left: 1rem;
   font-style: normal;
