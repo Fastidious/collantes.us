@@ -359,7 +359,7 @@ header > h1 > a {
 /* Lists */
 
 ol, ul {
-  padding-left: 0;
+  margin-left: -2.5rem;
 }
 
 li::marker {

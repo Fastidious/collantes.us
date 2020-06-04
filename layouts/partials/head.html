@@ -6,7 +6,9 @@
 <link rel='stylesheet' href='/style.css'>
 <link rel='stylesheet' href='/css/all.css'>
 <!-- Custom style sheets injected by posts (if any) -->
-{{ with .Params.css }}<link rel='stylesheet' href='{{ . }} '>{{ end }}
+{{ with .Params.css }}
+<link rel='stylesheet' href='{{ . }} '>
+{{ end }}
 <!-- RSS feed -->
 <link rel="alternate" type="application/rss+xml" href="/index.xml" />
 <!-- Open graph -->
