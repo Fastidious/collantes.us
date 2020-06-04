@@ -1,5 +1,10 @@
 /* General style sheet */
 
+:root {
+/*  --first-favourite-colour: #00bfff; */
+  --first-favourite-colour: #008000;
+}
+
 -/* Fonts */
 @font-face {
   font-family: 'Lato';
@@ -337,7 +342,7 @@ pre > code {
 a {
   color: #333;
   text-decoration: none;
-  border-bottom: 1px dotted #00bfff;
+  border-bottom: 1px dotted var(--first-favourite-colour);
 }
 
 header > a {
@@ -358,7 +363,7 @@ ol, ul {
 }
 
 li::marker {
-  color: #00bfff;
+  color: var(--first-favourite-colour);
 }
 
 .posttitle {
@@ -486,7 +491,7 @@ kbd {
 /* Footer */
 
 footer {
-  border-top: 1px dotted #00bfff;
+  border-top: 1px dotted var(--first-favourite-colour);
   text-align: center;
   font-size: 0.9rem;
   margin-top: 2rem;
@@ -654,7 +659,7 @@ button:disabled {
   a {
     color: #cccccc;
     text-decoration: none;
-    border-bottom: 1px dotted #00bfff;
+    border-bottom: 1px dotted var(--first-favourite-colour);
   }
   pre {
     background-color: #444444;
@@ -699,7 +704,7 @@ a.anchor {
     display: inline-block;
     width: 20px;
     height: 30px;
-    background: #00bfff;
+    background: var(--first-favourite-colour);
     margin-left: 5px;
     border-radius: 1px;
     -webkit-animation: cursor 1s infinite;
