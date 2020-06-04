@@ -4,6 +4,9 @@ date: {{ .Date }}
 description:
 images:
   -
+cover:
+	image: 
+	caption: 
 videos:
   - 
 tags:
