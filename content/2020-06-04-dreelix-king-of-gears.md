@@ -3,7 +3,10 @@ title: "Dreelix, King of Gears"
 date: 2020-06-04T18:51:34-04:00
 description: "A small role-playing story I wrote to play with Kent."
 images:
-  -
+  - "/resources/2020-06-04-dreelix-king-of-gears.jpg"
+cover:
+  image: "/resources/2020-06-04-dreelix-king-of-gears.jpg"
+  caption: "Tinker goblin, **not** Dreelix. Illustration by [Ryan Lovelock](https://www.deviantart.com/ryanlovelock)."
 videos:
   - 
 tags:

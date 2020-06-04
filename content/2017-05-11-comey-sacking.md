@@ -5,7 +5,7 @@ url: /2017/05/11/comey-sacking/
 description: "This is bizarre in so many ways, that I have to document it here."
 cover:
   image: "/resources/2017-05-11-comey-sacking.jpg"
-  caption: "Trump's letter dismissing Comey - AP Photo/Jon Elswick"
+  caption: "Trump's letter dismissing Comey."
   style: normal
 categories:
  - "politics"
