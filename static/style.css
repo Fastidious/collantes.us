@@ -391,7 +391,7 @@ th:first-of-type, td:first-of-type {
 th {
   text-align: left;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Hack to add space between thead and tbody (https://stackoverflow.com/a/10762599) */
@@ -405,6 +405,7 @@ tbody::before
 td {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  vertical-align: top;
 }
 
 tr > td:first-child {
