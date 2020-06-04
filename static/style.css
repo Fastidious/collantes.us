@@ -748,3 +748,60 @@ a.anchor {
     color: slategray;
     font-size: 1rem;
 }
+
+/* Offset subsequent years with a larger top margin */
+h2:not(:first-of-type) { margin-top: 3rem; }
+
+/* Style the blog post entries */
+li {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 2rem 2.75rem 1fr;
+  grid-gap: 0.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+  margin-left: 2.75rem;
+}
+
+time { 
+  justify-self: center;
+}
+
+/* Display time and date in a monospace script so that post titles line up */
+.postdate {
+  color: gray;
+  font-size: 1rem;
+  vertical-align: bottom;
+}
+
+/* Don’t display the day name multiple times for days that have multiple entries */
+.day:not(.item-0) { color: #ffffff; }
+
+.date { 
+  font-weight: normal;
+  line-height: 2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  color: white;
+  background-color: var(--first-favourite-colour);
+  border-radius: 2rem;
+  margin: 0;
+  float: left;
+}
+
+@media (prefers-color-scheme: dark) {
+  .day:not(.item-0) { 
+    color: #000000;
+  }
+}
+
+a.anchor {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Selects an element with an ID matching the current URL's fragment */
+:target {
+  padding: 1px 3px;
+  border-bottom: 1px dotted var(--first-favourite-colour);
+}
