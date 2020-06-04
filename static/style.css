@@ -681,7 +681,7 @@ button:disabled {
     background-color: #222;
   }
   blockquote {
-    margin-left: -1.3rem;
+    margin-left: 0rem;
     border-left: 0.3rem solid #999999;
     padding-left: 1rem;
     font-style: normal;
