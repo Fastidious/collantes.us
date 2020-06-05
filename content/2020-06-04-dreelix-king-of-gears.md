@@ -6,7 +6,7 @@ images:
   - "/resources/2020-06-04-dreelix-king-of-gears.jpg"
 cover:
   image: "/resources/2020-06-04-dreelix-king-of-gears.jpg"
-  caption: "Tinker goblin, **not** Dreelix. Illustration by [Ryan Lovelock](https://www.deviantart.com/ryanlovelock)."
+  caption: "Tinker goblin of some sorts. Certainly **not** Dreelix. By [Arthur Lorenz](https://www.artstation.com/artwork/ybJYRJ)."
 videos:
   - 
 tags:
@@ -20,12 +20,15 @@ Since very young age Dreelix has been curious about the mechanics of the univers
 
 A little bit more about his house. Although small, and humble, the walls are decorated with functional artwork the resembles gears and serves a purpose. For example, small frames around his house, when activated, will pull out a pitcher and serve chilled water, should you feel thirsty. And boy, the house is clean! Dreelix is very neat, and tidy. The walls are painted light green with rivets of dark green. Gears, and Dreelix's own artwork adorns his house walls. Most of the gears are metallic chrome, and of different sizes. 
 
-Dreelix dress on an light brown all leather set, with accents of tin metal re-enforcing it. A tool belt in which he carries his tools and gadgets never leaves his hips. His leather boots are also light brown, with tin metal accents. He wears a monocle with a high powered lens—used to craft and fix very small tinkers,—which he normally keeps folded over his head. His hair is curly and dark reddish. He is normally quiet, composed, and thoughtful[^1]. 
+Dreelix dress on an light brown all leather set, with accents of tin metal re-enforcing it. A tool belt in which he carries his tools and gadgets never leaves his hips. His leather boots are also light brown, with tin metal accents. He wears a monocle with a high powered lens---used to craft and fix very small tinkers---which he normally keeps folded over his head. His hair is curly and dark reddish. He is normally quiet, composed, and thoughtful[^1]. 
 
 Dreelix's mount and faithful companion is Hux, a magnificent condor he found on a warm summer afternoon eating the corpse of a stranger by the side of the road.
 
 {{< hr >}}
 
-I wrote the above ten years ago, or so, in anticipation to role playing with Kent. He liked to tell stories, and liked me to do the same. Just making sure I don't lose it, keeping it for my records. Maybe one day I will finish it.
+I wrote the above around six years ago, or so, in anticipation to role playing with Kent. He liked to tell stories, and liked me to do the same. Just making sure I don't lose it, keeping it for my records. Maybe one day I will finish it.
+
+{{< lastmodified >}}
+
 
 [^1]: Just like his creator :joy:.
