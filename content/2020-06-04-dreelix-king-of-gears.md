@@ -31,4 +31,4 @@ I wrote the above around six years ago, or so, in anticipation to role playing w
 {{< lastmodified >}}
 
 
-[^1]: Just like his creator :joy:.
+[^1]: Just like his creator. :joy:
