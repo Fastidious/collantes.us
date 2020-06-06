@@ -1,8 +1,8 @@
 /* General style sheet */
 
 :root {
-/*  --first-favourite-colour: #00bfff; */
-  --first-favourite-colour: #008000;
+  --first-favourite-colour: #00bfff;
+/*  --first-favourite-colour: #008000; */
 }
 
 -/* Fonts */
@@ -341,8 +341,14 @@ pre > code {
 
 a {
   color: #333;
+  text-decoration-color: var(--first-favourite-colour);
+  /* 
   text-decoration: none;
   border-bottom: 1px dotted var(--first-favourite-colour);
+  */
+  text-decoration-thickness: .125em;
+  text-underline-offset: 1.7px;
+  text-decoration-skip-ink: auto;
 }
 
 header > a {
@@ -658,9 +664,15 @@ button:disabled {
 
 @media (prefers-color-scheme: dark) {
   a {
-    color: #cccccc;
+    color: #ccc;
+    /*
     text-decoration: none;
     border-bottom: 1px dotted var(--first-favourite-colour);
+    */
+    text-decoration-color: var(--first-favourite-colour);
+    text-decoration-thickness: .130em;
+    text-underline-offset: 1.5px;
+    text-decoration-skip-ink: auto;
   }
   pre {
     background-color: #444444;
