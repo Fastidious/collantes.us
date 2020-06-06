@@ -493,7 +493,7 @@ kbd {
 .footnotes { font-size: 1rem; margin-top: 2rem; color: slategray; }
 .footnotes > hr { border: none; height: 1px; background-color: slategray; }
 .footnotes li::marker { font-size: 1rem; color: #333; }
-.footnotes::before { content: "Footnotes"; font-size: 1.2rem; }
+.footnotes::before { content: "Footnotes"; font-size: 1.1rem; }
 
 /* Footer */
 
