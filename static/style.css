@@ -1,5 +1,4 @@
 /* General style sheet */
-
 :root {
   --first-favourite-colour: #00bfff;
 /*  --first-favourite-colour: #008000; */
@@ -154,12 +153,24 @@ body {
 
 /* Headings */
 
-h1, h2, h3 { line-height: 1; }
-header > h1 { font-size: 3rem; margin-top: 0; margin-bottom: 0; }
-h1, h2 { font-size: 2rem; }
-:not(header) > h1 { line-height:1.25; }
-h2 { margin-top: 2.5rem; margin-bottom: 1.5rem; }
-h3 { font-size: 1.5rem; line-height: 1.25; margin-top: 2rem; }
+h1, h2, h3 {
+  line-height: 1;
+}
+header > h1 { 
+  font-size: 3rem; margin-top: 0; margin-bottom: 0;
+}
+h1, h2 { 
+  font-size: 2rem;
+}
+:not(header) > h1 {
+  line-height:1.25;
+}
+h2 { 
+  margin-top: 2.5rem; margin-bottom: 1.5rem;
+}
+h3 { 
+  font-size: 1.5rem; line-height: 1.25; margin-top: 2rem;
+}
 
 .postdate {
   font-family: 'Lato';
@@ -177,7 +188,6 @@ time.single {
 
 /* Stop subscripts and superscripts from changing the line height.
    Courtesy of https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/ */
-
 sup, sub {
   vertical-align: baseline;
   position: relative;
@@ -198,9 +208,7 @@ sub {
 }
 
 /* Figures and images */
-
 img {
-/*  max-width: 100%;*/
   width: 100%
 }
 
@@ -260,7 +268,6 @@ h3 + figure.window-with-shadow {
 }
 
 /* Specialisations */
-
 figure.half-width-flush-right {
   width: 47.5%;
   margin-left: 5%;
@@ -270,23 +277,14 @@ figure.half-width-flush-right {
 }
 
 /* Video */
-
-video, video[poster] { width: 100%; }
-figure > video { margin-bottom: 1rem; }
-
-/* Mastodon toot embeds */
-
-.mastodon-embed {
-  width: 400px;
-  max-width: 100%;
-  border: 0;
-  float:right;
-  margin-left: 1rem;
-  border: 1px solid gray;
+video, video[poster] { 
+  width: 100%;
+}
+figure > video {
+  margin-bottom: 1rem;
 }
 
 /* Block quotes */
-
 blockquote {
   margin-left: 0rem;
   border-left: 0.3rem solid slategray;
@@ -304,7 +302,6 @@ blockquote li {
 }
 
 /* Code */
-
 pre, code {
   font-family: "SFMono-Regular", Menlo, Consolas, "Fira Code", "Liberation Mono", Courier, monospace;
   font-weight: 500;
@@ -338,7 +335,6 @@ pre > code {
 }
 
 /* Links */
-
 a {
   color: #333;
   text-decoration-color: var(--first-favourite-colour);
@@ -363,7 +359,6 @@ header > h1 > a {
 
 
 /* Lists */
-
 ol, ul {
   margin-left: -2.5rem;
 }
@@ -378,7 +373,6 @@ li::marker {
 }
 
 /* Tables */
-
 /* Make tables display with striped row borders overflowing the flush left alignment of the text just like we do with lists and code blocks for consistency. */
 table {
   width: 100%;
@@ -401,8 +395,7 @@ th {
 }
 
 /* Hack to add space between thead and tbody (https://stackoverflow.com/a/10762599) */
-tbody::before
-{
+tbody::before {
   content: '';
   display: block;
   height: 0.5rem;
@@ -424,7 +417,6 @@ tr:nth-child(2n) {
 }
 
 /* Special styles */
-
 /* Warnings */
 .important-warning {
   /* Make any icons inside align properly to text flow. */
@@ -454,13 +446,11 @@ tr:nth-child(2n) {
 }
 
 /* Images */
-
 .hairline-border > img {
   border: 1px solid gray;
 }
 
 /* Icons */
-
 header {
   display: grid;
   grid-template-columns: 1fr 2.25rem 2.4rem 2.25rem /*2.25rem*/;
@@ -488,15 +478,23 @@ kbd {
 }
 
 /* Footnotes */
-
-.footnote-ref { font-size: 0.9rem; margin-left: 0.15rem; }
-.footnotes { font-size: 1rem; margin-top: 2rem; color: slategray; }
-.footnotes > hr { border: none; height: 1px; background-color: slategray; }
-.footnotes li::marker { font-size: 1rem; color: #333; }
-.footnotes::before { content: "Footnotes"; font-size: 1.1rem; }
+.footnote-ref { 
+  font-size: 0.9rem; margin-left: 0.15rem;
+}
+.footnotes { 
+  font-size: 1rem; margin-top: 2rem; color: slategray;
+}
+.footnotes > hr { 
+  border: none; height: 1px; background-color: slategray;
+}
+.footnotes li::marker { 
+  font-size: 1rem; color: #333;
+}
+.footnotes::before { 
+  content: "Footnotes"; font-size: 1.1rem;
+}
 
 /* Footer */
-
 footer {
   border-top: 1px dotted var(--first-favourite-colour);
   text-align: center;
@@ -550,9 +548,7 @@ footer {
 }
 
 /* Break point: title goes to two lines: 580px. */
-
 /* Nothing yet. */
-
 /* Break point: narrow portrait viewports */
 
 @media (max-width: 420px) {
@@ -578,7 +574,9 @@ footer {
   }
 
   /* Sadly, there’s not enough room to make list text flush left. */
-  li { list-style-position: inside; }
+  li { 
+    list-style-position: inside;
+  }
 
   /* Half-width images leave the text too narrow to read comfortably so revert to full-width. */
   figure.half-width-flush-right {
@@ -595,10 +593,6 @@ footer {
     height: 10rem;
   }
 }
-
-/*
-  Install Site.js widget.
-*/
 
 button {
   text-align: center;
@@ -652,16 +646,7 @@ button:disabled {
   cursor: pointer;
 }
 
-/* Mastodon embeds */
-
-.mastodon-embed {
-  width: 100%;
-  float: none;
-  margin-left: 0;
-}
-
 /*  Auto dark */
-
 @media (prefers-color-scheme: dark) {
   a {
     color: #ccc;
