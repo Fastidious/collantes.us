@@ -1,2 +1,2 @@
 # collantes.us
-Blog
+Blog.
