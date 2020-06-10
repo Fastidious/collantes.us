@@ -477,14 +477,16 @@ header {
 kbd {
   display: inline-block;
   border-radius: 0.25rem;
-  background-color: #eee;
+  color: #ffffff;
+  background-color: #666;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
   border: 1px solid lightgray;
   line-height: 1.25rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-family: 'Karla';
 }
 
 /* Footnotes */
@@ -495,13 +497,13 @@ kbd {
   font-size: 1rem; margin-top: 2rem; color: slategray;
 }
 .footnotes > hr { 
-  border: none; height: 1px; background-color: slategray;
+  border: none; height: 1px; background-color: #cccccc;
 }
 .footnotes li::marker { 
   font-size: 1rem; color: var(--first-favourite-colour);
 }
 .footnotes::before { 
-  content: "Footnotes"; font-size: 1.1rem;
+  content: "Footnotes"; font-size: 1rem;
 }
 
 /* Footer */
@@ -724,7 +726,7 @@ a.anchor {
 .divider {
     margin: 2em 0 2em 0;
     width: 4em;
-    border-color: #bdbdbd;
+    border-color: var(--first-favourite-colour);
     border-style: solid;
     border-width: .125em 0 0 0;
     background-color: transparent;

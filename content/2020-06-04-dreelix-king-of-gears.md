@@ -28,4 +28,5 @@ Dreelix's mount and faithful companion is Hux, a magnificent condor he found on 
 
 I wrote the above around six years ago, or so, in anticipation to role playing with Kent. He liked to tell stories, and liked me to do the same. Just making sure I don't lose it, keeping it for my records. Maybe one day I will finish it.
 
+
 [^1]: Just like his creator. :joy:
