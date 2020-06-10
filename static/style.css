@@ -186,6 +186,12 @@ time.single {
   margin-top: -0.3rem;
 }
 
+.single a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: gray;
+}
+
 /* Stop subscripts and superscripts from changing the line height.
    Courtesy of https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/ */
 sup, sub {
@@ -742,19 +748,14 @@ a.anchor {
     height:100%;
 }
 
-.lastmod {
-    color: slategray;
-    font-size: 1rem;
-}
-
 .post__hash {
-  text-decoration: none;
-  margin-left: 5px;
-  color: #cccccc;
-  opacity: 0.25;
+   text-decoration: none;
+   margin-left: 5px;
+   color: #cccccc;
+   opacity: 0.25;
 }
 
 .post__hash:hover {
-    color: var(--first-favourite-colour);
-    opacity: 1;
+   color: var(--first-favourite-colour);
+   opacity: 1;
 }
