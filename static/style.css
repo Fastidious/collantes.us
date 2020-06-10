@@ -465,6 +465,10 @@ header {
   align-items: end;
 }
 
+.fas:hover, .fab:hover {
+  color: var(--first-favourite-colour);
+}
+
 .email, .mastodon, .rss, .p2p {
   height: 27px;
 }
