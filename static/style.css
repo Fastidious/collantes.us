@@ -746,3 +746,15 @@ a.anchor {
     color: slategray;
     font-size: 1rem;
 }
+
+.post__hash {
+  text-decoration: none;
+  margin-left: 5px;
+  color: #cccccc;
+  opacity: 0.25;
+}
+
+.post__hash:hover {
+    color: var(--first-favourite-colour);
+    opacity: 1;
+}

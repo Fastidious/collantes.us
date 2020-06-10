@@ -8,7 +8,7 @@
     <img src='{{ if $isMap }}{{ .image }}{{ else }}{{ . }}{{ end }}'
       {{- if $isMap }}
         {{- with .caption }} alt='{{ . | markdownify }}'{{ end -}}
-      {{ end -}} />
+      {{ end -}} loading='lazy' />
     {{ if $isMap }}
       {{ with .caption }}
       <figcaption class='container'>
