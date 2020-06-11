@@ -6,4 +6,4 @@ categories: ["politics"]
 tags: ["tidbits"]
 ---
 
-I really need to get into politics ---as much as I hate it--- to prepare for the upcoming presidential elections. I have the feeling that it’s going to be nasty... as always.
+I really need to get into politics---as much as I hate it---to prepare for the upcoming presidential elections. I have the feeling that it’s going to be nasty... as always.
