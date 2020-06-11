@@ -754,6 +754,10 @@ a.anchor {
     height:100%;
 }
 
+.hash {
+  font-size: 1rem;
+}
+
 .post__hash {
    text-decoration: none;
    margin-left: 5px;
