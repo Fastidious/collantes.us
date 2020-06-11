@@ -561,7 +561,7 @@ footer {
 
 /* Break point: title goes to two lines: 580px. */
 /* Nothing yet. */
-/* Break point: narrow portrait viewports */
+/* Break point: narrow portrait view-ports */
 
 @media (max-width: 420px) {
   html {
@@ -573,7 +573,7 @@ footer {
   }
 
   /*
-  Remove the border radius so the background color of code blocks appears in
+  Remove the border radius so the background colour of code blocks appears in
   full bleed.
   */
   .chroma {
