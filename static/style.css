@@ -760,7 +760,8 @@ a.anchor {
 
 .post__hash {
    text-decoration: none;
-   margin-left: 5px;
+   margin-left: -25px;
+   margin-right: 10px;
    color: #cccccc;
    opacity: 0.25;
 }

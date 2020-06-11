@@ -1,2 +1,2 @@
 
-<h{{ .Level }} id="{{ .Anchor | safeURL }}">{{ .Text | safeHTML }} <span class="hash"><a href="#{{ .Anchor | safeURL }}" class="post__hash"><i class="fas fa-link"></i></a></span></h{{ .Level }}>
+<h{{ .Level }} id="{{ .Anchor | safeURL }}"><span class="hash"><a href="#{{ .Anchor | safeURL }}" class="post__hash"><i class="fas fa-link"></i></a></span>{{ .Text | safeHTML }}</h{{ .Level }}>
