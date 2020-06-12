@@ -459,7 +459,7 @@ tr:nth-child(2n) {
 /* Icons */
 header {
   display: grid;
-  grid-template-columns: 1fr 2.25rem 2.4rem 2.25rem 2.25rem;
+  grid-template-columns: 1fr 2.25rem 2rem 2.25rem 2.25rem;
   grid-gap: 0.10rem;
   margin-bottom: 2.7rem;
   align-items: end;
@@ -550,10 +550,20 @@ footer {
     font-size: 1rem;
   }
 
-  html, body {
-    padding: 0.5rem;
+  header > h1 {
+    font-size: 2rem;
   }
 
+  html, body {
+    padding: 0.9rem;
+  }
+
+  .post__hash {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #cccccc;
+    opacity: 0.25;
+  }
   /*
   Remove the border radius so the background colour of code blocks appears in
   full bleed.
