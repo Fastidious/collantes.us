@@ -16,6 +16,6 @@ tags:
   - apple
 ---
 
-For eleven years I have used iPhones exclusively. More than half of that time, I have used them without any cover. My rationale? It is a beautifully crafted device, why to hide its beauty behind a cover? I never had an issue with it, until today. I am coming here to mark the first time my iPhone screen has ever shattered. I didn't drop it, but placed it in a way that, after a few vibrations, made it fall to the floor—a tiled floor, nonetheless, the "evil" kind!
+For eleven years I have used iPhones exclusively. More than half of that time, I have used them without any cover. My rationale? It is a beautifully crafted device, why to hide its beauty behind a cover? I never had an issue with it, until today. I am coming here to mark the first time my iPhone screen has ever shattered. I didn't drop it, but placed it in a way that, after a few vibrations, made it fall to a tiled floor. RIP!
 
 This will not change, nor affect how I keep my iPhones. The next one will continue to be used "naked," in all its beauty. 
