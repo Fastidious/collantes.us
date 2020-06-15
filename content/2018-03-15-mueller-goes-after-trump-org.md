@@ -16,7 +16,7 @@ tags:
   - russia
   - images
 ---
-I have disliked other presidents in the past, for actions taken while they were in the office that I — and many others — considered stupid, crazy, or just plain wrong. My dislike for the current president eclipses any of my previous. I voted for Hillary, and [wrongly](/2016/11/09/i-was-wrong/) [predicted](/2015/10/05/prediction/) that she would win the presidency.
+I have disliked other presidents in the past, for actions taken while they were in the office that I---and many others---considered stupid, crazy, or just plain wrong. My dislike for the current president eclipses any of my previous. I voted for Hillary, and [wrongly](/2016/11/09/i-was-wrong/) [predicted](/2015/10/05/prediction/) that she would win the presidency.
 
 [Today news](https://www.nytimes.com/2018/03/15/us/politics/trump-organization-subpoena-mueller-russia.html?smid=tw-nytimes&smtyp=cur), although perhaps inconsequential, brings joy to an otherwise political nightmare.
 
