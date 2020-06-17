@@ -215,7 +215,7 @@ sub {
 
 /* Figures and images */
 img {
-  width: 100%
+  width: 100%;
 }
 
 /*
@@ -449,11 +449,6 @@ tr:nth-child(2n) {
 
 .warning-path {
   fill: white;
-}
-
-/* Images */
-.hairline-border > img {
-  border: 1px solid gray;
 }
 
 /* Icons */

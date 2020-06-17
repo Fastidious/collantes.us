@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebApplication">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta itemprop="name" content="HTML5HASH" />
+    <meta itemprop="description" content="A tool that uses HTML5 features to provide file hashing with crc32, md5, sha1, sha256, sha512, sha3 and ripdemd160 without the need to upload anything." />
+    <!-- Does anyone parse these? Maybe for future crawlers ;-) -->
+    <meta itemprop="author" content="Stefan Hacker" />
+    <meta itemprop="applicationCategory" content="Tool" />
+    <meta itemprop="applicationSubCategory" content="Hashing tool" />
+    <meta itemprop="browserRequirements" content="HTML5 support including FileReader(), Blob() with slices as well as Drag & Drop" />
+
+    <title>HTML5HASH, hashing files in your browser</title>
+
+    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.22.custom.css" rel="stylesheet" />
+    <link type="text/css" href="html5hash.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/sha1.js"></script>
+    <script type="text/javascript" src="js/sha256.js"></script>
+    <script type="text/javascript" src="js/sha512.js"></script>
+    <script type="text/javascript" src="js/sha3.js"></script>
+    <script type="text/javascript" src="js/ripemd160.js"></script>
+    <script type="text/javascript" src="js/crc32.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="html5hash.js"></script>
+</head>
+
+<body id="drop_zone">
+    <div id="centerfield">
+
+        <header>
+            <fieldset id="algo_selection">
+                <legend>Algorithm selection</legend>
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" name="crc32switch" />CRC-32</td>
+                            <td><input type="checkbox" name="MD5-switch" />MD5</td>
+                            <td><input type="checkbox" name="SHA1-switch" checked="checked" />SHA1   </td>
+                            <td id="algosshow"><a href="#">more</a></td>
+                        </tr>
+                        <tr class="additionalalgos">
+                            <td><input type="checkbox" name="RIPEMD-160-switch" />RIPEMD-160</td>
+                            <td><input type="checkbox" name="SHA256-switch" checked="checked" />SHA256</td>
+                            <td><input type="checkbox" name="SHA512-switch" />SHA512</td>
+                        </tr>
+                        <tr class="additionalalgos">
+                            <td><input type="checkbox" name="SHA3-224-switch" />SHA3-224</td>
+                            <td><input type="checkbox" name="SHA3-256-switch" />SHA3-256</td>
+                            <td><input type="checkbox" name="SHA3-384-switch" />SHA3-384</td>
+                        </tr>
+                        <tr class="additionalalgos">
+                            <td><input type="checkbox" name="SHA3-512-switch" />SHA3-512</td>
+                            <td>&nbsp;</td>
+                            <td id="algoshide"><a href="#">less</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+
+            <h1>HTML5HASH</h1>
+
+        </header>
+
+        <article>
+            <ul id="list">
+                <li>
+                    <b>File selection</b>
+                    <div id="placeholder">
+                        <b>Drop</b> files here or <b>click to browse.</b>
+                    </div>
+                    <input type="file" id="hiddenFilesSelector" multiple />
+                </li>
+            </ul>
+        </article>
+
+        <aside id="explanation">
+            <span itemprop="description">Hashes are computed locally. No files or information on files will be uploaded.</span>
+        </aside>
+
+    </div>
+
+    <footer>
+        Copyright © 2012 Stefan Hacker
+    </footer>
+    <!-- Work around opacity inheritance by having this seperate. -->
+</body>
+</html>
