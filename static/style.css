@@ -313,18 +313,20 @@ pre, code {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5;
+  overflow: auto;
 }
 
 pre {
   background-color: #eeeeee;
-  white-space: pre-wrap;       /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-  
-  /*margin-left: -1rem;
-  margin-right: -1rem;*/
+  /*
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  */
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
@@ -575,11 +577,11 @@ footer {
     margin-top: 0;
   }
 
-  /* Sadly, there’s not enough room to make list text flush left. */
+  /* Sadly, there’s not enough room to make list text flush left.
   li { 
     list-style-position: inside;
   }
-
+  */
   /* Half-width images leave the text too narrow to read comfortably so revert to full-width. */
   figure.half-width-flush-right {
     width: 100%;
