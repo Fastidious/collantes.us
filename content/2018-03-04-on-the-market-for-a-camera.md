@@ -2,7 +2,7 @@
 date: "2018-03-04T21:12:22-05:00"
 title: "On the market for a camera"
 authors: []
-description: "The iPhone camera isn't bad — it is actually very good — but when greater details are needed, it simply doesn't cut it."
+description: "The iPhone camera isn't bad---it is actually very good---but when greater details are needed, it simply doesn't cut it."
 comments: false
 categories:
   - personal

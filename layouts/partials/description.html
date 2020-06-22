@@ -1,0 +1,6 @@
+{{ with .Description }}
+<p class='desc'>
+  {{- . | markdownify -}}
+</p>
+<hr class='divider' />
+{{ end }}

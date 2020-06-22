@@ -762,3 +762,9 @@ a.anchor {
    color: var(--first-favourite-colour);
    opacity: 1;
 }
+
+.desc {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #999999;
+}

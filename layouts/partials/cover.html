@@ -4,7 +4,7 @@
 {{- $isMap := ( not ( eq $type "string" ) ) -}}
 
 <div class='entry-cover'>
-  <figure class='hairline-border'>
+  <figure>
     <img src='{{ if $isMap }}{{ .image }}{{ else }}{{ . }}{{ end }}'
       {{- if $isMap }}
         {{- with .caption }} alt='{{ . | markdownify }}'{{ end -}}
