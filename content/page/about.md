@@ -3,6 +3,7 @@ title: "About me"
 description: "A bit about myself, this site, and similar tomfooleries."
 slug: "/about/"
 url: "/about/"
+showdate: false
 _build:
   list: false
 cover:
