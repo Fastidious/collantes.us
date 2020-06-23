@@ -872,7 +872,7 @@ button:disabled {
     border-left: 0.3rem solid #999999;
     padding-left: 1rem;
     font-style: normal;
-    color: #999999;
+    color: slategray;
   }
   blockquote a {
     color: #999999;
