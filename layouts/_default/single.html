@@ -11,7 +11,7 @@
     <main>
       {{ if ne .Params.showdate false }}
       <h1><a class="anchor" href="/#{{ .Page.Date.Format "20060102T150405Z0700" }}">{{ .Page.Title | markdownify }}</a></h1>
-      <time class='single' datetime="{{ .Page.Date.Format "2006-01-02T15:04:05Z0700" }}">{{ if ne .GitInfo nil }}<a href="https://github.com/Fastidious/collantes.us/commit/{{.GitInfo.Hash}}" title="{{.GitInfo.Subject}}"><i class="fas fa-history"></i></a>{{ end }} {{ .Page.Date.Format "Monday, 02 January 2006" }}</time>
+      <time class='single' datetime="{{ .Page.Date.Format "2006-01-02T15:04:05Z0700" }}">{{ if ne .GitInfo nil }}<a href="https://github.com/Fastidious/collantes.us/commit/{{.GitInfo.Hash}}" title="{{.GitInfo.Subject}}"><i class="fas fa-history"></i></a>{{ end }} {{ .Page.Date.Format "15:04 on Monday, 02 January 2006" }}</time>
       {{ else }}
       <h1>{{ .Page.Title | markdownify }}</h1>
       {{ end }}

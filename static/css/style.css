@@ -362,7 +362,7 @@ time.single {
   font-size: 1rem;
   line-height: 1;
   font-weight: normal;
-  color: gray;
+  color: #94949a;
   text-align: left;
   margin-top: -0.3rem;
   font-feature-settings: "zero" 1, "ss03" 1;
@@ -718,10 +718,10 @@ footer {
 }
 
 .summary {
-  color: #999999;
+  color: #94949a;
   padding-top: 1rem;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   float: left;
 }
@@ -951,5 +951,5 @@ a.anchor {
 .desc {
   font-size: 1.4rem;
   line-height: 1.5;
-  color: #999999;
+  color: slategray;
 }
