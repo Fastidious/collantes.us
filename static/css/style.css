@@ -838,7 +838,7 @@ button:disabled {
 /*  Auto dark */
 @media (prefers-color-scheme: dark) {
   a {
-    color: #ccc;
+    color: #cccccc;
     /*
     text-decoration: none;
     border-bottom: 1px dotted var(--first-favourite-colour);
@@ -865,17 +865,17 @@ button:disabled {
     border-bottom: none;
   }
   tr:nth-child(2n) {
-    background-color: #222;
+    background-color: #222222;
   }
   blockquote {
     margin-left: 0rem;
-    border-left: 0.3rem solid #999999;
+    border-left: 0.3rem solid slategray;
     padding-left: 1rem;
     font-style: normal;
     color: slategray;
   }
   blockquote a {
-    color: #999999;
+    color: slategray;
   }
   blockquote li {
     margin-left: 2em;
@@ -894,8 +894,8 @@ a.anchor {
     background: var(--first-favourite-colour);
     margin-left: 5px;
     border-radius: 1px;
-    -webkit-animation: cursor 1s infinite;
-    animation: cursor 1s infinite;
+    -webkit-animation: cursor 1.5s infinite;
+    animation: cursor 1.5s infinite;
 }
 
 @-webkit-keyframes cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}@keyframes cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}.menu{--shadow-color:rgba(0,0,0,0.12);--shadow:0 8px 20px var(--shadow-color);border-right:1px solid;margin-right:18px;padding-right:24px;font-weight:600}
