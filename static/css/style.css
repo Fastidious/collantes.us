@@ -570,10 +570,10 @@ li::marker {
 table {
   width: 100%;
   border-spacing: 0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+/*  margin-left: -1rem;
+  margin-right: -1rem; */
 }
 
 th:first-of-type, td:first-of-type {

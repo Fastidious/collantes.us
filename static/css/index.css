@@ -11,8 +11,10 @@ h2:not(:first-of-type) { margin-top: 3rem; }
 li {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 2rem 2.75rem 1fr;
-  grid-gap: 0.5rem;
+/*  grid-template-columns: 2rem 2.75rem 1fr;*/
+  grid-template-columns: 2rem 1fr;
+/*  grid-gap: 0.5rem; */
+  grid-gap: 2rem;
   align-items: start;
   margin-bottom: 1rem;
   margin-left: 2.75rem;

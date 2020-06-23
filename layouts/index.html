@@ -19,10 +19,10 @@
         <ul> 
           {{ range $index, $post := .Pages }}
             <li>
-              <time datetime="{{ $post.Date.Format "2006-01-02T15:04:05Z0700" }}">
+            <time datetime="{{ $post.Date.Format "2006-01-02T15:04:05Z0700" }}">
                 <span class='postdate day item-{{ $index }}'>{{ $post.Date.Format "Mon" }}</span>
-              </time>
-                <span class='postdate'>{{ $post.Date.Format "15:04" }}</span>
+            </time>
+            <!--    <span class='postdate'>{{ $post.Date.Format "15:04" }}</span> -->
               <a id='{{ $post.Date.Format "20060102T150405Z0700" }}' class='posttitle' href="{{ .RelPermalink }}">{{ $post.Title }}</a>
             </li>
           {{ end }}
