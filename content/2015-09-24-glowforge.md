@@ -8,7 +8,8 @@ tags:
 - "youtube"
 - "videos"
 ---
-<div class="video-container"><iframe width="100%" src="https://www.youtube-nocookie.com/embed/ysCaqh38JVQ?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen frameborder="0" allowfullscreen></iframe></div>
+
+<video autoplay controls src="/resources/glowforge.mp4"></video>
 
 {{< hr >}}
 

@@ -470,6 +470,8 @@ figure.half-width-flush-right {
 /* Video */
 video, video[poster] { 
   width: 100%;
+  margin-top: 1rem;
+  border: 1px solid gray;
 }
 figure > video {
   margin-bottom: 1rem;

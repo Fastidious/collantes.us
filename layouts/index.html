@@ -23,7 +23,7 @@
                 <span class='postdate day item-{{ $index }}'>{{ $post.Date.Format "Mon" }}</span>
             </time>
             <!--    <span class='postdate'>{{ $post.Date.Format "15:04" }}</span> -->
-              <a id='{{ $post.Date.Format "20060102T150405Z0700" }}' class='posttitle' href="{{ .RelPermalink }}">{{ $post.Title }}</a>
+              <a id='{{ $post.Date.Format "20060102T150405Z0700" }}' class='posttitle' href="{{ .RelPermalink }}">{{ $post.Title | markdownify }}</a>
             </li>
           {{ end }}
         </ul>
