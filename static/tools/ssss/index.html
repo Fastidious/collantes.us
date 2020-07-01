@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <title> Simple Shamir's Secret Sharing (s4) - Run shamir's secret sharing locally in your browser</title>
     <meta http-equiv="Content-Security-Policy" content="default-src: 'self'; form-action: 'none'; connect-src: 'data'">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bulma.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -46,7 +46,7 @@
                 <p>With <b>S</b>imple <b>S</b>hamir's <b>S</b>ecret <b>S</b>haring (s4) I want to provide you an easy to use interface for this beautiful little piece of math.</p>
                 <p>s4 is open source and provided as it is. You can find the code on <a href="https://github.com/simonfrey/s4/issues" target="_blank">Github</a> and this website works completely offline. Save it to your computer (Ctrl+S) in order to not lose access to the s4 in case this website will be down at any point in the future.</p>
                <p> Please note that s4 is provided as it is and I do not take responsibility for any bugs. s4 is a tiny layer around <a href="https://github.com/posener/sharedsecret" target="_blank">sharedsecret</a> and golangs <a href="https://github.com/gtank/cryptopasta/blob/master/encrypt.go" target="_blank">AES encryption</a>.</p>
-                <p>If you find any issues, please report them via <a href="https://github.com/simonfrey/s4/issues" target="_blank">Github issues</a> and if you want to tip me for the work on this project,<a href="https://simon-frey.com/tip" target="_blank">feel free to do so</a></p>
+                <p>If you find any issues, please report them via <a href="https://github.com/simonfrey/s4/issues" target="_blank">Github issues</a> and if you want to tip me for the work on this project,<a href="https://simon-frey.com/tip" target="_blank"> feel free to do so !</a></p>
             </div>
         </div>
         <div class="columns" id="decryptForm"  v-if="show">
@@ -105,6 +105,7 @@
 
 <script src="js/wasmPayload.js"></script>
 <script src="js/wasm_exec.js"></script>
+<script src="js/patch_base64.js"></script>
 <script src="js/vue_debug.js"></script>
 <script src="js/errorNotification.js"></script>
 <script src="js/tabNav.js"></script>

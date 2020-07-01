@@ -690,6 +690,12 @@ kbd {
   content: "Footnotes"; font-size: 1rem;
 }
 
+a.footnote-backref {
+  text-decoration: none;
+  border: none;
+  color: slategray;
+}
+
 /* Footer */
 footer {
   border-top: 1px dotted var(--first-favourite-colour);
