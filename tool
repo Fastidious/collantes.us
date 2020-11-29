@@ -5,8 +5,8 @@ if [ -z "$1" ]; then
 	echo "For example: new another-post-again"
 else
 	if [ "$1" == "build" ]; then
-		rm -rf ../Fastidious/*
-		hugo -d ../Fastidious/
+		rm -rf ../fastidious.github.com/*
+		hugo -d ../fastidious.github.com/
 	else
 		hugo new content/$YEAR_FOR_POST-$1.md
 		open -a typora content/$YEAR_FOR_POST-$1.md
